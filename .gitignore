@@ -1,0 +1,6 @@
+/.env
+/logs
+/wordpress/.env
+/wordpress/logs
+/wordpress/src
+

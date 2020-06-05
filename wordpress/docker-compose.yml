@@ -1,0 +1,56 @@
+version: "3.6"
+services:
+    app:
+        build:
+            context: ./docker/php
+            args:
+                - HTTP_PROXY=${PROXY}
+                - HTTPS_PROXY=${PROXY}
+        container_name: wp_app
+        depends_on:
+            - db
+        volumes:
+            - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+            - ./src:/var/www/html
+        working_dir: /var/www/html
+        environment:
+            - WORDPRESS_DB_HOST=db:3306
+            - WORDPRESS_DB_NAME=${DB_NAME}
+            - WORDPRESS_DB_USER=${DB_USER}
+            - WORDPRESS_DB_PASSWORD=${DB_PASS}
+            - HTTP_PROXY=${PROXY}
+            - HTTPS_PROXY=${PROXY}
+            - TZ=${TZ}
+    web:
+        image: nginx:1.17-alpine
+        container_name: wp_web
+        depends_on:
+            - app
+        ports:
+            - 20080:80
+            - 20443:443
+        volumes:
+            - ./src:/var/www/html
+            - ./logs:/var/log/nginx
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+            - ./docker/nginx/ssl:/etc/nginx/ssl
+    db:
+        image: mysql:8.0
+        container_name: wp_db
+        ports:
+            - 23306:3306
+        volumes:
+            - db-store:/var/lib/mysql
+            - ./logs:/var/log/mysql
+            - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASS}
+            - MYSQL_DATABASE=${DB_NAME}
+            - MYSQL_USER=${DB_USER}
+            - MYSQL_PASSWORD=${DB_PASS}
+            - TZ=${TZ}
+networks: 
+    default:
+        name: wp_network
+volumes:
+    db-store:
