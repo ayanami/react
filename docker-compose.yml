@@ -18,6 +18,7 @@ services:
             - ./src:/work
             - ./logs:/work/storage/logs
             - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+            - ./docker/php/cacert.pem:/work/cacert.pem
         working_dir: /work
         environment:
             - TZ=${TZ}

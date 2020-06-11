@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../../css/common/anchor.css';
 
 export const createAnchor = ChildComponent => {
     return (props) => {

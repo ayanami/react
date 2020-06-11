@@ -25,7 +25,7 @@ PROXY=http://user:password@host:port
 $ docker-compose up -d --build
 ```
 
-👉 https://localhost:20443
+👉 http://localhost:20080
 
 ### Laravel
 ```Bash

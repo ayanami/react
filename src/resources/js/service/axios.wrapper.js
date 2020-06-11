@@ -5,7 +5,7 @@ import { notifyServerError } from '../actions/server.error.action';
 const axiosWrapper = axios.create();
 const onSuccess = response => response;
 const onError = error => {
-    console.log("http error: ", error.response);
+    console.log('http error: ', error.response);
     const { status, data } = error.response;
     store.dispatch(notifyServerError({ status, data }));
 }

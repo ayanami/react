@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import '../../../css/common/validate.css';
 
 export const ServerValidateMessages = ({ name }) => {
     const serverError = useSelector(state => state.serverError.payload);

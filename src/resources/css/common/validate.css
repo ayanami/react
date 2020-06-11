@@ -1,0 +1,19 @@
+.validate-messages {
+    color: #761b18;
+    background-color: #f9d6d5;
+    border-color: #f7c6c5;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-top: 6px;
+}
+
+.validate-messages ul {
+    list-style: none;
+    padding: 6px 12px;
+    display: table;
+    margin-bottom: 0;
+}
+
+.validate-messages ul li {
+    display: table-row;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { attributes } from '../../validation/attributes';
+import '../../../css/common/validate.css';
 
 export const ClientValidateMessages = ({ name, errors }) => {
     if (!(name in errors)) {

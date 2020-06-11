@@ -4,10 +4,12 @@ import { ServerValidateMessages } from '../error/server.validate.messages.compon
 
 export const InputText = props => {
     return (
-        <div>
-            <input type="text"
+        <div style={{ width: "100%" }}>
+            <input autoComplete="off"
+                type="text"
                 id={props.id}
                 name={props.name}
+                placeholder={props.placeholder}
                 className={props.className}
                 onChange={() => props.setDisable(false)}
                 ref={props.validate} />

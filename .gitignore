@@ -1,5 +1,8 @@
 /.env
 /logs
+/src/public/css/app.css
+/src/public/js/app.js
+/src/public/mix-manifest.json
 /wordpress/.env
 /wordpress/logs
 /wordpress/src

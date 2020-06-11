@@ -6,7 +6,7 @@ import { Switch } from 'react-router';
 import { ConnectedRouter } from 'connected-react-router';
 import { store } from './redux/store';
 import { history } from './react/history';
-import TopContainer from './containers/top.container';
+import TopContainer from './containers/portal/top.container';
 
 const root = document.getElementById('root');
 if (root) {
@@ -14,7 +14,7 @@ if (root) {
         <Provider store={store}>
             <ConnectedRouter history={history}>
                 <Switch>
-                    <Route path="/" component={TopContainer} />
+                    <Route exact path="/" component={TopContainer} />
                 </Switch>
             </ConnectedRouter>
         </Provider>,

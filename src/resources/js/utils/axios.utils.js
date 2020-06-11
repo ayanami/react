@@ -7,7 +7,7 @@ const publish = (promise, callback) => {
     const suspend = promise.then(
         response => {
             if (response?.status === 200) {
-                console.log("response: ", response);
+                console.log('response: ', response);
                 status = 'fulfilled';
                 result = response;
                 callback?.();
@@ -20,7 +20,7 @@ const publish = (promise, callback) => {
         });
 
     const subscribe = () => {
-        console.log("status: ", status)
+        console.log('status: ', status)
         if (status === 'pending') {
             throw suspend;
         } else {
@@ -35,7 +35,7 @@ const subscribe = (promise, callback) => {
     promise.then(
         response => {
             if (response?.status === 200) {
-                console.log("response: ", response);
+                console.log('response: ', response);
                 callback?.();
                 return { response }
             } else {

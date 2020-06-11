@@ -7,7 +7,7 @@ export const createForm = ChildComponent => {
 
         const submitHandler = (values) => {
             setDisable(true);
-            listener(values);
+            listener?.(values);
         }
 
         return (
