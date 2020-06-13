@@ -29,7 +29,7 @@ $ docker-compose exec app ash
 
 ```
 /work # npm install
-/work # node app/app.js
+/work # forever start app/app.js
 ```
 
 👉 https://localhost:30443/api/v1/test
