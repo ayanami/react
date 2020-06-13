@@ -12,7 +12,7 @@ services:
                 # - PROXY_PASSWORD_ENCODING=${PROXY_PASSWORD_ENCODING}
         container_name: api_web
         ports:
-            - 30443:3000
+            - 30443:443
         tty: true
         volumes:
             - ./src:/work
