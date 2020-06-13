@@ -10,9 +10,9 @@ ARG PROXY_PASSWORD_ENCODING
 ENV COMPOSER_ALLOW_SUPERUSER 1
 ENV COMPOSER_HOME /composer
 
-ENV HTTP_PROXY=http://${PROXY_HOST}:${PROXY_PORT}
-ENV HTTPS_PROXY=${HTTP_PROXY}
-ENV HTTP_PROXY_AUTH=basic:*:${PROXY_USER}:${PROXY_PASSWORD}
+# ENV HTTP_PROXY=http://${PROXY_HOST}:${PROXY_PORT}
+# ENV HTTPS_PROXY=${HTTP_PROXY}
+# ENV HTTP_PROXY_AUTH=basic:*:${PROXY_USER}:${PROXY_PASSWORD}
 
 RUN set -eux && \
   apk add --update-cache --no-cache --virtual=.build-dependencies tzdata && \
@@ -20,8 +20,8 @@ RUN set -eux && \
   apk add --update-cache npm && \
   docker-php-ext-install bcmath
 
-ENV HTTP_PROXY=http://${PROXY_USER}:${PROXY_PASSWORD_ENCODING}@${PROXY_HOST}:${PROXY_PORT}
-ENV HTTPS_PROXY=${HTTP_PROXY}
+# ENV HTTP_PROXY=http://${PROXY_USER}:${PROXY_PASSWORD_ENCODING}@${PROXY_HOST}:${PROXY_PORT}
+# ENV HTTPS_PROXY=${HTTP_PROXY}
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer && \
   composer config -g repos.packagist composer https://packagist.jp && \

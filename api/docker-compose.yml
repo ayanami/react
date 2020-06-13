@@ -1,0 +1,27 @@
+version: "3.6"
+services:
+    node:
+        build:
+            context: ./docker/node
+            args:
+                - TZ=${TZ}
+                # - PROXY_HOST=${PROXY_HOST}
+                # - PROXY_PORT=${PROXY_PORT}
+                # - PROXY_USER=${PROXY_USER}
+                # - PROXY_PASSWORD=${PROXY_PASSWORD}
+                # - PROXY_PASSWORD_ENCODING=${PROXY_PASSWORD_ENCODING}
+        container_name: api_web
+        ports:
+            - 30443:3000
+        tty: true
+        volumes:
+            - ./src:/work
+            - ../openssl/ssl:/work/ssl
+        working_dir: /work
+        environment:
+            - TZ=${TZ}
+        #     - HTTP_PROXY=http://${PROXY_USER}:${PROXY_PASSWORD_ENCODING}@${PROXY_HOST}:${PROXY_PORT}
+        #     - HTTPS_PROXY=http://${PROXY_USER}:${PROXY_PASSWORD_ENCODING}@${PROXY_HOST}:${PROXY_PORT}
+networks: 
+    default:
+        name: api_network

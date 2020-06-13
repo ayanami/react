@@ -6,4 +6,4 @@
 /wordpress/.env
 /wordpress/logs
 /wordpress/src
-
+/api/.env

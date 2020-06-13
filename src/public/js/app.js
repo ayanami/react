@@ -7057,7 +7057,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "a {\r\n    color: inherit;\r\n}", ""]);
+exports.push([module.i, "a {\n    color: inherit;\n}", ""]);
 
 // exports
 
@@ -7076,7 +7076,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".error {\r\n    align-items: center;\r\n    display: flex;\r\n    height: 100vh;\r\n    justify-content: center;\r\n    position: relative;\r\n}\r\n\r\n.status-code {\r\n    border-right: 2px solid;\r\n    font-size: 26px;\r\n    padding: 0 15px 0 15px;\r\n    text-align: center;\r\n}\r\n\r\n.error-message {\r\n    font-size: 18px;\r\n    padding: 10px;\r\n    text-align: center;\r\n}", ""]);
+exports.push([module.i, ".error {\n    align-items: center;\n    display: flex;\n    height: 100vh;\n    justify-content: center;\n    position: relative;\n}\n\n.status-code {\n    border-right: 2px solid;\n    font-size: 26px;\n    padding: 0 15px 0 15px;\n    text-align: center;\n}\n\n.error-message {\n    font-size: 18px;\n    padding: 10px;\n    text-align: center;\n}", ""]);
 
 // exports
 
@@ -7095,7 +7095,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".footer {\r\n    background-color: #333836;\r\n    padding: 0;\r\n}\r\n\r\n.footer-menu {\r\n    padding: 20px;\r\n}\r\n\r\n.footer-menu-title {\r\n    color: #6d716e;\r\n    font-size: 17px;\r\n    font-weight: bold;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.footer-menu ul {\r\n    list-style: none;\r\n}\r\n\r\n.footer-menu ul li {\r\n    color: #ffffff;\r\n    font-size: 15px;\r\n    padding-bottom: 10px;\r\n}\r\n\r\n.footer-copyright {\r\n    padding-bottom: 20px;\r\n    text-align: center;\r\n}\r\n\r\n.footer-copyright-text {\r\n    color: #6d716e;\r\n    font-weight: bold;\r\n    margin: 0;\r\n}", ""]);
+exports.push([module.i, ".footer {\n    background-color: #333836;\n    padding: 0;\n}\n\n.footer-menu {\n    padding: 20px;\n}\n\n.footer-menu-title {\n    color: #6d716e;\n    font-size: 17px;\n    font-weight: bold;\n    padding-bottom: 10px;\n}\n\n.footer-menu ul {\n    list-style: none;\n}\n\n.footer-menu ul li {\n    color: #ffffff;\n    font-size: 15px;\n    padding-bottom: 10px;\n}\n\n.footer-copyright {\n    padding-bottom: 20px;\n    text-align: center;\n}\n\n.footer-copyright-text {\n    color: #6d716e;\n    font-weight: bold;\n    margin: 0;\n}", ""]);
 
 // exports
 
@@ -7114,7 +7114,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".header {\r\n    padding: 15px;\r\n}\r\n.header-menu {\r\n    display: flex;\r\n    width: 100%;\r\n}\r\n\r\n.header-menu div {\r\n    align-items: center;\r\n    display: flex;\r\n    justify-content: center;\r\n    position: relative;\r\n}\r\n\r\n.header-menu-left div span {\r\n    font-weight: bold;\r\n    padding-left: 10px;\r\n}\r\n\r\n.header-menu-right {\r\n    margin: 0 0 0 auto;\r\n}\r\n\r\n.header-menu-right div {\r\n    display: block;\r\n    margin-left: 25px;\r\n    text-align: center;\r\n}\r\n\r\n.header-search {\r\n    border: none;\r\n    border-radius: 4px;\r\n    display: flex;\r\n}\r\n.header-search button {\r\n    background-color: #f0f4f2;\r\n    border: none;\r\n    height: 34px;\r\n    padding-left: 20px;\r\n}\r\n.header-search-text {\r\n    background-color: #f0f4f2;\r\n    border: none;\r\n    color: #434a54;\r\n    font-size: 14px;\r\n    height: 34px;\r\n    padding: 6px 12px;\r\n    width: 100%;\r\n}\r\n.header-d-point {\r\n    align-items: center;\r\n    display: flex;\r\n    margin: 10px;\r\n    position: relative;\r\n}\r\n.header-d-point span {\r\n    margin: 0 10px;\r\n}\r\n", ""]);
+exports.push([module.i, ".header {\n    padding: 15px;\n}\n.header-menu {\n    display: flex;\n    width: 100%;\n}\n\n.header-menu div {\n    align-items: center;\n    display: flex;\n    justify-content: center;\n    position: relative;\n}\n\n.header-menu-left div span {\n    font-weight: bold;\n    padding-left: 10px;\n}\n\n.header-menu-right {\n    margin: 0 0 0 auto;\n}\n\n.header-menu-right div {\n    display: block;\n    margin-left: 25px;\n    text-align: center;\n}\n\n.header-search {\n    border: none;\n    border-radius: 4px;\n    display: flex;\n}\n.header-search button {\n    background-color: #f0f4f2;\n    border: none;\n    height: 34px;\n    padding-left: 20px;\n}\n.header-search-text {\n    background-color: #f0f4f2;\n    border: none;\n    color: #434a54;\n    font-size: 14px;\n    height: 34px;\n    padding: 6px 12px;\n    width: 100%;\n}\n.header-d-point {\n    align-items: center;\n    display: flex;\n    margin: 10px;\n    position: relative;\n}\n.header-d-point span {\n    margin: 0 10px;\n}\n", ""]);
 
 // exports
 
@@ -7133,7 +7133,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".validate-messages {\r\n    color: #761b18;\r\n    background-color: #f9d6d5;\r\n    border-color: #f7c6c5;\r\n    border: 1px solid transparent;\r\n    border-radius: 0.25rem;\r\n    margin-top: 6px;\r\n}\r\n\r\n.validate-messages ul {\r\n    list-style: none;\r\n    padding: 6px 12px;\r\n    display: table;\r\n    margin-bottom: 0;\r\n}\r\n\r\n.validate-messages ul li {\r\n    display: table-row;\r\n}", ""]);
+exports.push([module.i, ".validate-messages {\n    color: #761b18;\n    background-color: #f9d6d5;\n    border-color: #f7c6c5;\n    border: 1px solid transparent;\n    border-radius: 0.25rem;\n    margin-top: 6px;\n}\n\n.validate-messages ul {\n    list-style: none;\n    padding: 6px 12px;\n    display: table;\n    margin-bottom: 0;\n}\n\n.validate-messages ul li {\n    display: table-row;\n}", ""]);
 
 // exports
 

@@ -4,6 +4,36 @@
 ```Bash
 $ git clone https://OAuth2:${GIT_ACCESS_TOKEN}@sd-pj-management.systena.co.jp:8080/gitlab/docomo-prod/DeviceShare.git
 ```
+
+### API
+```Bash
+$ cd DeviceShare/api
+$ vi .env
+
+# timezone
+TZ=Asia/Tokyo
+# proxy host
+PROXY_HOST=proxy_host
+# proxy port
+PROXY_PORT=proxy_port
+# proxy user
+PROXY_USER=proxy_user
+# proxy password
+PROXY_PASSWORD=proxy_password
+# proxy password (encoding required. ex @ => %40)
+PROXY_PASSWORD_ENCODING=proxy_password_encoding
+
+$ docker-compose up -d --build
+$ docker-compose exec app ash
+```
+
+```
+/work # npm install
+/work # node app/app.js
+```
+
+👉 https://localhost:30443/api/v1/test
+
 ### WordPress
 ```Bash
 $ cd DeviceShare/wordpress
@@ -25,7 +55,7 @@ PROXY=http://user:password@host:port
 $ docker-compose up -d --build
 ```
 
-👉 http://localhost:20080
+👉 https://localhost:20443
 
 ### Laravel
 ```Bash
